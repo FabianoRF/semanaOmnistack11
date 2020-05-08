@@ -1,0 +1,71 @@
+anotaçoes backend
+
+
+documentação Knex: knex.org (knex se trata de um sql builder, ou seja construtor de sql)
+
+comandos knex usados:{
+    npm install knex => instala
+    npm install sqlite3 -> instala o driver sqlite3
+    
+    npx knex migrate:latest => executa a ultima MSFIDOSignatureAssertion
+
+    knex migrate:make nome_da_migration => cria a nome_da_migration
+
+    npx migrate:status=> lista as migrates independentes
+
+}
+
+
+npm install nodemom -D: biblioteca utilizada para quando for desenvolvendo a aplicação 
+
+
+
+rota: endereço completo
+recurso: apenas um elemento, ex: /users
+
+
+
+Métodos HTTP:
+GET: Buscar/listar um informação do back-end (o que o browser executa)
+POST: Criar um informação no backend
+PUT: Alterar uma informação no backend
+DELETE: Deletar uma informação no backend
+ 
+
+
+Tipos de parametros:
+ 
+Query: Parametros nomeados envisados na rota apos "?" (Filtros, paginação) Ex:/users?name=Diego
+Route Parms: parâmetros utilizados para indentificar recusrsos
+Request Body: Corpo da requisição utilizado para criar ou alterar recursos
+
+
+No-SQL: MongoDB, CouchDB, etc
+
+
+Driver: SELECT * FROM users
+Query Builder: table('users').select('*').where('')
+
+
+
+Entidades do bd:
+
+ONG
+Caso(incident)
+
+Funcionalidades:
+
+login de ONG
+Cadastro de ONG
+logout de ONG
+Cadastro de ONG
+Cadastrar novos casos
+Deletar Casos
+listar casos especificos de uma ONG
+LIstar todos os casos
+
+
+request:
+
+request.body= dados da requisição
+request.header= informações de contexto, como quem está logado por exemplo
