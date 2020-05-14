@@ -1,0 +1,75 @@
+O React monta toda estrutura html e css a partir do javascript
+Ele executa o index.html depois puxa a div root com o restante do 
+codigo
+
+Teoria do React:
+
+- Um arquivo html dentro de um JavaScript é chamado de JSX
+(JavaScript XML)
+
+- Um componente React=> é um função que retorna html, sempre 
+começando com letra maiuscula, e sempre deve-se importar o react, ou seja são conjuntos isolados de logica JS
+visualização(JSX, HTML), e possivel estilização(CSS)
+
+- Para acessar uma variavel javascript dentro de um cod html
+basta colocar entre chaves{}, variaveis que vem do parametro
+
+
+- Propriedades: parecido com o atributo do html, pode ser enviada como prarametro
+ex: <Header>
+        Conteudo 
+    </Header>
+
+esse Conteudo poderá ser acessado por props.children
+
+-Caso seja enviado como um title o mesmo pode ser acessado pelo this.props e podem ser numeros, objetos, strings, arrays, etc.( ultilizar chaves 
+para enviar variaveis e numeros)
+
+Estado:
+
+- Diferente das propriedades, o estado não é repassado ao componente e sim configurado dentro dele.Pense no estado como as propriedades de nossa
+ classe que devem ser armazenadas para renderizarmos o componente da forma correta.
+
+ -è imutável, ou seja, nunca deve ser alterado e sim sobreposto
+
+Imutabilidade:
+
+-Por questão de performance, nao se pode mudar o valor de um
+estado de form direta.
+
+-Portanto para se utilizar deve se usar um array onde o primeiro parametro é um valor 
+e o segundo é a função que muda
+
+*******************************************************
+
+Conversando com o backend:
+
+para que um arquivo JSX converse com o backend de maneira correta, cria-se uma função de Handle que enviará o formulario
+para o backend
+
+
+Obs:
+-Para se utilizar de classes no html, usa se className pois o class é palavra reservada do JS
+
+-O componente Switch garante que apenas uma rota seja executada no momento
+
+-Necessita colocar exact na rota '/' pois o router dom não reconhece as demais sem o exact
+
+-importar o componente Link do react dom para usar link sem ter de recarregar a pagina toda
+
+-Com o React podemos inserir css dentro das tags por meio da propriedade style, passanod um JSON
+
+-No CSS quando quisermos trabalhar com um determinado componente depois de um mesmo basta usar o +:
+ex do input + input;
+
+-Para mandar o usuario para outra pagina, usar o componente useHistory, do react-router-dom;
+
+-useEffect dispara uma função em um determinado momento, ex: assim que o mesmo é mostrado em tela
+Seu primeiro parametro se trata da função a ser executada e o segundo é quando será executada.
+O segundo parametro se trata de um array de dependencias ou seja quando um valor dentro dele mudar a função executa,
+e quando se deixa vazio so executa uma unica vez.
+
+Comandos:
+npm install react-icons => pacote de icones disponiveis para o react
+
+npm install react-router-dom => instala a parte de rotas no react
